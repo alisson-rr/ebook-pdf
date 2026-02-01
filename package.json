@@ -1,0 +1,24 @@
+{
+  "name": "guia-atendimento-magnetico",
+  "version": "1.0.0",
+  "description": "Guia do Atendimento Magnético: Do Atendimento à Gestão de Alta Performance",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000",
+    "build": "echo 'Projeto estático - pronto para deploy'",
+    "preview": "live-server --port=3000"
+  },
+  "keywords": [
+    "atendimento",
+    "clinica",
+    "estetica",
+    "guia",
+    "magnetico"
+  ],
+  "author": "Agenda Magnética",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "puppeteer": "^24.34.0"
+  }
+}
