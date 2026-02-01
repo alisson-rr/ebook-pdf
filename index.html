@@ -957,68 +957,10 @@ A seguir, você encontrará o passo a passo com as imagens correspondentes para 
 <h4>Seu Desafio Final (e o Início de Tudo)</h4>
 <p>Escolha <strong>uma única estratégia</strong> deste guia para implementar com consistência nesta semana. Pode ser um novo script de reativação, a configuração de uma mensagem automática mais acolhedora ou o início do monitoramento da sua taxa de retenção.</p>
 <p>Comece pequeno, observe o impacto e ajuste. A consistência é o que transforma pequenas ações em grandes resultados. Sua clínica pode e vai ser uma referência. Você tem todas as ferramentas para chegar lá.</p>
-<p><a href="#" id="download-pdf" style="color: var(--primary-color); text-decoration: none; cursor: pointer; font-weight: bold;">📥 A jornada começa agora - Clique aqui para baixar o PDF</a></p>
+<p style="text-align: center; font-size: 1.3rem; color: var(--primary-color); font-weight: bold; margin: 2rem 0;">A jornada começa agora</p>
 </div>
 </section>
 <footer>
 <p>2026 Agenda Magnética. Todos os direitos reservados.</p>
 </footer>
-<script>
-document.getElementById('download-pdf').addEventListener('click', async function(e) {
-    e.preventDefault();
-    
-    const btn = this;
-    btn.innerHTML = '⏳ Gerando PDF...';
-    btn.style.display = 'none';
-    
-    window.scrollTo(0, 0);
-    
-    try {
-        const element = document.querySelector('.container');
-        
-        // Captura como imagem
-        const canvas = await html2canvas(element, {
-            scale: 2,
-            useCORS: true,
-            allowTaint: true,
-            backgroundColor: '#ffffff'
-        });
-        
-        const imgData = canvas.toDataURL('image/jpeg', 1.0);
-        
-        // Cria o PDF
-        const { jsPDF } = window.jspdf;
-        const pdf = new jsPDF('p', 'mm', 'a4');
-        
-        const pageWidth = 210;
-        const pageHeight = 297;
-        const imgWidth = pageWidth;
-        const imgHeight = (canvas.height * imgWidth) / canvas.width;
-        
-        let heightLeft = imgHeight;
-        let position = 0;
-        
-        // Primeira página
-        pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
-        heightLeft -= pageHeight;
-        
-        // Páginas adicionais
-        while (heightLeft > 0) {
-            position = heightLeft - imgHeight;
-            pdf.addPage();
-            pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
-            heightLeft -= pageHeight;
-        }
-        
-        pdf.save('Guia-Atendimento-Magnetico.pdf');
-        
-    } catch (error) {
-        console.error('Erro:', error);
-        alert('Erro: ' + error.message);
-    }
-    
-    btn.style.display = '';
-    btn.innerHTML = '📥 A jornada começa agora - Clique aqui para baixar o PDF';
-});
-</script>
 </body></html>
