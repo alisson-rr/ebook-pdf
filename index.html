@@ -24,7 +24,6 @@
             --radius: 16px;
             --shadow-soft: 0 4px 20px rgba(183, 110, 121, 0.12);
             --shadow-hover: 0 8px 32px rgba(183, 110, 121, 0.22);
-            --transition: all 0.3s ease;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -95,10 +94,9 @@
             text-decoration: none;
             color: inherit;
             box-shadow: var(--shadow-soft);
-            border: 2px solid transparent;
+            border: 2px solid var(--rose-gold-light);
             position: relative;
             overflow: hidden;
-            transition: var(--transition);
             display: flex;
             flex-direction: column;
             gap: 12px;
@@ -112,17 +110,6 @@
             right: 0;
             height: 4px;
             background: linear-gradient(90deg, var(--rose-gold-light), var(--rose-gold), var(--gold-light));
-            transition: var(--transition);
-        }
-
-        .nav-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-hover);
-            border-color: var(--rose-gold-light);
-        }
-
-        .nav-card:hover::before {
-            height: 5px;
         }
 
         .card-number {
@@ -161,12 +148,6 @@
             font-weight: 600;
             font-size: 0.88rem;
             margin-top: 4px;
-            transition: var(--transition);
-        }
-
-        .nav-card:hover .card-arrow {
-            gap: 10px;
-            color: var(--rose-gold-dark);
         }
 
         .footer-banner {
@@ -201,12 +182,6 @@
             font-size: 1rem;
             font-weight: 600;
             box-shadow: 0 4px 16px rgba(37, 211, 102, 0.3);
-            transition: var(--transition);
-        }
-
-        .whatsapp-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 24px rgba(37, 211, 102, 0.4);
         }
 
         .whatsapp-btn svg {
@@ -239,38 +214,45 @@
     </div>
 
     <div class="cards-grid">
-        <a href="guia-mao-na-massa/" class="nav-card">
+        <a href="ebook-1.html" class="nav-card">
             <span class="card-number">1</span>
-            <h2>Guia Mão na Massa</h2>
-            <p>O passo a passo de 5 etapas pra criar sua primeira campanha de anúncios que atrai clientes como ímã.</p>
+            <h2>Guia Relâmpago</h2>
+            <p>Sua primeira campanha em 30 minutos. O passo a passo sem enrolação para atrair clientes usando anúncios do Instagram.</p>
             <span class="card-arrow">Ler agora →</span>
         </a>
 
-        <a href="kit-anuncios/" class="nav-card">
+        <a href="ebook-2.html" class="nav-card">
             <span class="card-number">2</span>
-            <h2>Kit de Anúncios Magnéticos</h2>
-            <p>5 textos prontos pra copiar e colar, checklist salva-vidas e ideias de imagens que param o feed.</p>
+            <h2>Arsenal de Textos Magnéticos</h2>
+            <p>5 textos de anúncio prontos, 3 scripts de WhatsApp e checklist salva-vidas para suas campanhas.</p>
             <span class="card-arrow">Ler agora →</span>
         </a>
 
-        <a href="mapa-mental/" class="nav-card">
+        <a href="ebook-3.html" class="nav-card">
             <span class="card-number">3</span>
-            <h2>Mapa Mental</h2>
-            <p>10 ações estratégicas — orgânicas e pagas — pra fazer chover clientes na sua estética.</p>
+            <h2>Mapa Visual das 10 Estratégias</h2>
+            <p>10 ações práticas — orgânicas e pagas — para fazer chover clientes na sua estética.</p>
             <span class="card-arrow">Ler agora →</span>
         </a>
 
-        <a href="planner/" class="nav-card">
+        <a href="ebook-5.html" class="nav-card">
             <span class="card-number">4</span>
-            <h2>Planner da Agenda Magnética</h2>
-            <p>Seu plano mensal com metas, calendário de marketing e controle de resultados.</p>
+            <h2>Scripts Anti-Vácuo</h2>
+            <p>O guia definitivo para transformar silêncio no WhatsApp em agendamentos confirmados.</p>
             <span class="card-arrow">Ler agora →</span>
         </a>
 
-        <a href="guia-montagem/" class="nav-card">
+        <a href="ebook-6.html" class="nav-card">
             <span class="card-number">5</span>
-            <h2>Guia de Montagem Visual</h2>
-            <p>Instruções página por página de como montar cada material do Kit no Canva com visual profissional.</p>
+            <h2>Configuração Express do WhatsApp Business</h2>
+            <p>Deixe seu WhatsApp no piloto automático para receber e encantar novas clientes dos seus anúncios.</p>
+            <span class="card-arrow">Ler agora →</span>
+        </a>
+
+        <a href="ebook-7.html" class="nav-card">
+            <span class="card-number">6</span>
+            <h2>Pack de 10 Templates no Canva</h2>
+            <p>10 templates prontos para anúncios, stories e feed — arrasta a foto, muda o texto e posta!</p>
             <span class="card-arrow">Ler agora →</span>
         </a>
     </div>
@@ -285,7 +267,7 @@
     </div>
 
     <div class="footer-credit">
-        <p>@suaagendamagnetica · Alisson Rosa</p>
+        <p>@suaagendamagnetica</p>
     </div>
 
 </body>

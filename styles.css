@@ -66,7 +66,6 @@ body {
 
 #menu-toggle:hover {
     background: var(--pink-soft);
-    transform: scale(1.05);
 }
 
 #sidebar {
@@ -209,12 +208,7 @@ body {
 }
 
 #btn-pdf:hover {
-    transform: translateY(-3px);
     box-shadow: 0 10px 36px rgba(183, 110, 121, 0.5);
-}
-
-#btn-pdf:active {
-    transform: translateY(0);
 }
 
 /* ============================================
@@ -492,7 +486,6 @@ main#ebook-content {
 
 .config-item:hover {
     border-color: var(--rose-gold-light);
-    transform: translateY(-2px);
     box-shadow: var(--shadow-soft);
 }
 
@@ -567,7 +560,6 @@ main#ebook-content {
 
 .idea-card:hover {
     border-color: var(--rose-gold-light);
-    transform: translateY(-2px);
     box-shadow: var(--shadow-soft);
 }
 
@@ -680,7 +672,6 @@ main#ebook-content {
 
 .money-card:hover {
     border-color: var(--rose-gold-light);
-    transform: translateY(-3px);
     box-shadow: var(--shadow-soft);
 }
 
@@ -815,12 +806,6 @@ main#ebook-content {
     font-weight: 700;
     letter-spacing: 0.5px;
     box-shadow: 0 6px 24px rgba(183, 110, 121, 0.35);
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.03); }
 }
 
 /* ============================================
@@ -899,9 +884,6 @@ main#ebook-content {
     transition: var(--transition);
 }
 
-.icon-display:hover svg {
-    transform: scale(1.08);
-}
 
 /* ============================================
    FOTO DO AUTOR (final)
@@ -1263,7 +1245,6 @@ main#ebook-content {
 }
 
 .whatsapp-bottom-banner .whatsapp-btn:hover {
-    transform: translateY(-2px);
     box-shadow: 0 6px 24px rgba(37, 211, 102, 0.4);
 }
 
@@ -1771,7 +1752,139 @@ main#ebook-content {
         box-shadow: none;
     }
 
-    .publish-btn {
-        animation: none;
-    }
+}
+
+/* ============================================
+   COPY BLOCKS (textos de anúncio)
+   ============================================ */
+.copy-block {
+    background: var(--white);
+    border-radius: var(--radius-sm);
+    border: 2px solid var(--rose-gold-light);
+    margin-bottom: 28px;
+    overflow: hidden;
+}
+
+.copy-header {
+    background: linear-gradient(135deg, var(--pink-soft), var(--pink-blush));
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.copy-header h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--rose-gold-dark);
+    margin: 0;
+}
+
+.copy-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, var(--rose-gold), var(--rose-gold-dark));
+    color: var(--white);
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+.copy-objetivo {
+    padding: 10px 20px 0;
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+.copy-text {
+    background: var(--pink-pastel);
+    border-left: 4px solid var(--rose-gold);
+    padding: 16px 20px;
+    margin: 12px 20px 20px;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.93rem;
+    line-height: 1.7;
+    color: var(--text-dark);
+}
+
+.copy-text p {
+    margin: 0;
+}
+
+/* ============================================
+   SCRIPT BLOCKS (WhatsApp scripts)
+   ============================================ */
+.script-block {
+    background: var(--white);
+    border-radius: var(--radius-sm);
+    border: 2px solid var(--rose-gold-light);
+    margin-bottom: 28px;
+    overflow: hidden;
+}
+
+.script-header {
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+    padding: 14px 20px;
+}
+
+.script-header h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2e7d32;
+    margin: 0;
+}
+
+.script-block .copy-objetivo {
+    padding: 10px 20px 0;
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+.script-block .copy-text {
+    border-left-color: #4CAF50;
+    background: #f1f8e9;
+}
+
+/* ============================================
+   TIP BOX
+   ============================================ */
+.tip-box {
+    background: linear-gradient(135deg, #fff8e1, #fff3cd);
+    border-left: 4px solid var(--gold-light);
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+    margin: 16px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.tip-box h4 {
+    color: #b8860b;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* ============================================
+   NEXT EBOOK LINK
+   ============================================ */
+.next-ebook {
+    background: linear-gradient(135deg, var(--pink-soft), var(--pink-blush));
+    border-radius: var(--radius-sm);
+    padding: 18px 22px;
+    margin-top: 28px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.next-ebook a {
+    color: var(--rose-gold-dark);
+    text-decoration: none;
+}
+
+.next-ebook a:hover {
+    text-decoration: underline;
 }
