@@ -1171,7 +1171,6 @@ main#ebook-content {
     .toc-card {
         box-shadow: none;
         border: 1px solid #ddd;
-        page-break-after: always;
     }
 }
 
@@ -1731,17 +1730,13 @@ main#ebook-content {
         box-shadow: none;
         border: none;
         border-radius: 0;
-        page-break-after: always;
+        page-break-inside: avoid;
         padding: 40px 36px;
         margin-bottom: 0;
     }
 
     .page::before {
         display: none;
-    }
-
-    .page:last-child {
-        page-break-after: avoid;
     }
 
     .checklist-item:hover,
