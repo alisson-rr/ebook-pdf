@@ -12,7 +12,7 @@ Pensando em facilitar (e muito!) a sua vida, eu criei este pack com **10 templat
 
 O melhor de tudo? Você só precisa arrastar suas fotos, mudar os textos e pronto! Em minutos, você terá um conteúdo lindo e magnético para postar. Vamos juntas deixar seu Instagram com a cara do sucesso que você merece?
 
-## Parte 1: Templates para Anúncios (Para Atrair Clientes)
+## Parte 1: Templates para Anúncios (Para Atrair Clientes).
 
 Estes 3 templates são seu arsenal para campanhas de tráfego pago. O foco aqui é impacto visual, clareza na oferta e um chamado para ação irresistível que leva a cliente direto para o seu WhatsApp.
 
